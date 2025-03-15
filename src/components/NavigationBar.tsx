@@ -51,7 +51,7 @@ const NavigationBar = () => {
                 style={{ fontVariant: "small-caps" }}
               >
                 <a
-                  className="nav-link active border-top border-bottom"
+                  className="nav-link active"
                   href="#"
                 >
                   Home
@@ -62,7 +62,7 @@ const NavigationBar = () => {
                 style={{ fontVariant: "small-caps" }}
               >
                 <a
-                  className="nav-link dropdown-toggle border-top border-bottom"
+                  className="nav-link dropdown-toggle "
                   href="#"
                   onClick={() => toggleDropdown("browse")}
                 >
@@ -85,7 +85,7 @@ const NavigationBar = () => {
                 className="nav-item me-lg-3 me-1"
                 style={{ fontVariant: "small-caps" }}
               >
-                <a className="nav-link border-top border-bottom" href="#">
+                <a className="nav-link " href="#">
                   Blogs
                 </a>
               </li>
@@ -94,7 +94,7 @@ const NavigationBar = () => {
                 style={{ fontVariant: "small-caps" }}
               >
                 <a
-                  className="nav-link dropdown-toggle border-top border-bottom"
+                  className="nav-link dropdown-toggle "
                   href="#"
                   onClick={() => toggleDropdown("about")}
                 >
@@ -127,7 +127,7 @@ const NavigationBar = () => {
                 className="nav-item me-lg-3 me-1"
                 style={{ fontVariant: "small-caps" }}
               >
-                <a className="nav-link border-top border-bottom" href="#">
+                <a className="nav-link " href="#">
                   Contact
                 </a>
               </li>
