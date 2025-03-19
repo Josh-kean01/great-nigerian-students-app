@@ -1,11 +1,12 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
-import NavigationBar from "./components/NavigationBar";
+import HomePage from "./pages/HomePage";
+import "./App.css";
 
 const App = () => {
   return (
     <>
-      <div className="p-3 bg-info">
-        <NavigationBar />
+      <div className="">
+        <HomePage />
       </div>
     </>
   );

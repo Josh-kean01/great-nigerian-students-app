@@ -3,8 +3,6 @@ import Button from "./Button";
 
 const NavigationBar = () => {
   const [isCollapse, setCollapse] = useState(false);
-  // const [isDropdown, setDropdown] = useState(false);
-
   const [openDropdown, setOpenDropdown] = useState("");
 
   const toggleDropdown = (menu: string) => {
@@ -50,10 +48,7 @@ const NavigationBar = () => {
                 className="nav-item me-lg-3 me-1"
                 style={{ fontVariant: "small-caps" }}
               >
-                <a
-                  className="nav-link active"
-                  href="#"
-                >
+                <a className="nav-link active" href="#">
                   Home
                 </a>
               </li>
@@ -70,8 +65,8 @@ const NavigationBar = () => {
                 </a>
                 {openDropdown === "browse" && (
                   <ul
-                    className="dropdown-menu show border-0 outline-0 text-center text-md-start mx-0"
-                    style={{ minWidth: 0, marginLeft: "-1rem" }}
+                    className="dropdown-menu show border-0 outline-0 text-center text-md-start custom-margin"
+                    style={{ minWidth: 0 }}
                   >
                     <li>
                       <a className="dropdown-item" href="#">
@@ -102,8 +97,8 @@ const NavigationBar = () => {
                 </a>
                 {openDropdown === "about" && (
                   <ul
-                    className="dropdown-menu show border-0 outline-0 text-center text-md-start mx-0"
-                    style={{ minWidth: 0, marginLeft: "-1rem" }}
+                    className="dropdown-menu show border-0 outline-0 text-center text-md-start custom-margin"
+                    style={{ minWidth: 0 }}
                   >
                     <li>
                       <a className="dropdown-item" href="#">
